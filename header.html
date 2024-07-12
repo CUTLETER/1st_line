@@ -14,43 +14,40 @@
     <!--부트 스트랩 js 링크-->
     <script src="js/bootstrap.min.js"></script>
 
+    <script src="/static/js/bootstrap.bundle.js"></script>
 
-    <link rel="stylesheet" href="css/mini.css">
-
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/setting.css">
 
 </head>
 <body>
-
-    <h3>안녕하세요</h3>
-
-    <header class="header">
-        <div class="wrap">
-            <a href="#" class="logo">
-                <img src="img/logo.png" alt="로고">
-            </a>
-            <ul class="menu">
-                <li><a href="#">질문 게시판</a></li>
-                <li><a href="#">자유 게시판</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">미니 게시판
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">신청</a></li>
-                      <li><a href="#">목록</a></li>
+        <div class="page">
+            <header class="header">
+                <div class="logo">
+                    <img src="img/logo.png" alt="로고">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">자유 게시판</a></li>
+                        <li><a href="#">질문 게시판</a></li>
+                        <li><a href="#">정보 공유</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">코드 리뷰
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">백준</a></li>
+                              <li><a href="#">프로그래머스</a></li>
+                              <li><a href="#">솔브드</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">미니 게시판</a></li>
                     </ul>
-                </li>
-                <li><a href="#">정보 공유</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">코드 리뷰
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">백준</a></li>
-                      <li><a href="#">프로그래머스</a></li>
-                      <li><a href="#">솔브드</a></li>
-                    </ul>
-                </li>
-            </ul>
+                </nav>
+                <div class="header-btn">
+                    <button type="button" class="btn-join">회원가입</button>
+                    <button type="button" class="btn-login">로그인</button>
+                </div>
+            </header>
         </div>
-    </header>
 </body>
 </html>
