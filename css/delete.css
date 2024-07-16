@@ -1,0 +1,65 @@
+.delete-box {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 90px;
+}
+
+.delete-box h3 {
+    margin-top: 40px;
+}
+
+.delete-box p {
+    text-align: justify;
+}
+
+.warning-box > a {
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    cursor: default;
+    font-size: 15px;
+}
+
+.delete-box p, a{
+    font-family: 'NanumBarunGothic', sans-serif;
+}
+
+.delete-box h3, .delete-info .bold, .warning-box .bold  {
+    font-family: 'NanumBarunGothicBold', sans-serif;
+}
+
+.delete-box .light {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.warning-box {
+    border-top: 1px solid #999;
+
+}
+
+.warning-box .bold {
+    margin-top: 40px;
+    color: #00AFB9;
+}
+
+.delete-info .bold {
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.delete-box .delete-btn {
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.delete-box .delete-btn .check-btn {
+    border: 0;
+    color: #FFFFFF;
+    background-color: #00AFB9;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
