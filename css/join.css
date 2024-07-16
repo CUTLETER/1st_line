@@ -1,0 +1,57 @@
+.join-page {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.join-page h3 {
+    font-size: 25px;
+    font-family: 'NanumBarunGothic', sans-serif;
+    color: #00AFB9;
+    margin: 40px 0px;
+}
+
+.join-page .join-box {
+    
+}
+
+.join-page .join-box .id-input{
+    overflow: hidden;
+}
+
+.join-page .join-box .id-input .id-write {
+    float: left;
+}
+
+.join-page .join-box .id-input .check-btn {
+    width: 50px;
+    height: 25px;
+    float: right;
+}
+
+.join-page .join-box .join-input {
+    display: block;
+    border: 0.25px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    width: 400px;
+    height: 30px;
+    
+}
+
+.join-page .join-box .join-input:focus, .join-input:hover {
+    border: 0.25px solid #00AFB9;
+    outline: none;
+}
+
+.join-page div > .join-btn {
+    border: 0;
+    background-color: #00AFB9;
+    color: #fff;
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    margin: 30px 0px 60px 0px;
+    font-size: 12px;
+}

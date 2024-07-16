@@ -1,14 +1,15 @@
-.delete-box {
+.delete-page {
     width: 1440px;
     margin: 0 auto;
     padding: 0 90px;
 }
 
-.delete-box h3 {
+.delete-page h3 {
     margin-top: 40px;
+    font-size: 25px;
 }
 
-.delete-box p {
+.delete-page p {
     text-align: justify;
 }
 
@@ -20,15 +21,15 @@
     font-size: 15px;
 }
 
-.delete-box p, a{
+.delete-page p, a{
     font-family: 'NanumBarunGothic', sans-serif;
 }
 
-.delete-box h3, .delete-info .bold, .warning-box .bold  {
+.delete-page h3, .delete-info .bold, .warning-box .bold  {
     font-family: 'NanumBarunGothicBold', sans-serif;
 }
 
-.delete-box .light {
+.delete-page .light {
     color: #888;
     font-size: 14px;
     margin-bottom: 40px;
@@ -42,24 +43,32 @@
 .warning-box .bold {
     margin-top: 40px;
     color: #00AFB9;
+    font-size: 15px;
 }
 
 .delete-info .bold {
     margin-bottom: 0;
     margin-top: 40px;
+    font-size: 15px;
 }
 
-.delete-box .delete-btn {
+.delete-info .glyphicon-ok {
+    color: #00AFB9;
+}
+
+.delete-page .delete-btn {
     text-align: left;
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.delete-box .delete-btn .check-btn {
+.delete-page .delete-btn .check-btn {
     border: 0;
     color: #FFFFFF;
     background-color: #00AFB9;
     width: 60px;
     height: 30px;
     text-align: center;
+    font-size: 15px;
 }
+

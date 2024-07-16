@@ -1,0 +1,42 @@
+.delete-box {
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #eee;
+}
+
+.delete-box > h3 {
+    font-family: 'NanumBarunGothic';
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.delete-box > p {
+    font-family: 'NanumBarunGothic';
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 50px;
+}
+
+.delete-box .input-pw {
+    display: block;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 50px;
+    border-style: solid;
+    border-color: #eee;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.delete-box .check-btn {
+    color: #fff;
+    background-color: #00AFB9;
+    border: 0;
+    width: 300px;
+    height: 50px;
+    margin-top: 40px;
+    font-size: 15px;
+    font-family: 'NanumBarunGothic';
+}
