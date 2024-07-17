@@ -3,31 +3,76 @@
     height: 500px;
     margin: 0 auto;
     padding-left: 50px;
+    border: 0.5px solid #eee;
 }
 
 .join-page h3 {
     font-size: 25px;
     font-family: 'NanumBarunGothic', sans-serif;
-    color: #00AFB9;
+    color: #333;
     margin: 40px 0px;
 }
 
-.join-page .join-box {
-    
+.join-page .join-box > div {
+    position: relative;
 }
 
-.join-page .join-box .id-input{
-    overflow: hidden;
+.join-page .join-box > div .id-input {
+    width: 230px;
 }
 
-.join-page .join-box .id-input .id-write {
-    float: left;
+.join-page .join-box > div .user-icon1,.user-icon2,.user-icon3,.user-icon4,.user-icon5 {
+    position: absolute;
+    font-size: 15px;
+    color: #f07167;
 }
 
-.join-page .join-box .id-input .check-btn {
-    width: 50px;
-    height: 25px;
+.join-page .join-box > div .user-icon1 {
+    top: 7px;
+    left: 7px;
+}
+
+.join-page .join-box > div .user-icon2 {
+    top: 66px;
+    left: 7px;
+}
+
+.join-page .join-box > div .user-icon3 {
+    top: 128px;
+    left: 7px;
+}
+
+.join-page .join-box > div .user-icon4 {
+    top: 187px;
+    left: 7px;
+}
+
+.join-page .join-box > div .user-icon5 {
+    top: 247px;
+    left: 7px;
+}
+
+.join-page .join-box > div {
+    position: relative;
+}
+
+
+.join-page .join-box .check-btn {
+    position: absolute;
+    width: 60px;
+    height: 30px;
     float: right;
+    top: 0px;
+    left: 240px;
+    border: 0;
+    background-color: #00AFB9;
+    color: #fff;
+    font-family: 'NanumBarunGothic', sans-serif;    
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 11px;
+    text-align: center;
+    line-height: 30px;
 }
 
 .join-page .join-box .join-input {
@@ -35,9 +80,10 @@
     border: 0.25px solid #ccc;
     border-radius: 3px;
     margin-bottom: 30px;
-    width: 400px;
+    width: 300px;
     height: 30px;
-    
+    font-size: 13px;
+    text-indent: 25px;
 }
 
 .join-page .join-box .join-input:focus, .join-input:hover {
@@ -46,12 +92,16 @@
 }
 
 .join-page div > .join-btn {
+    display: block;
     border: 0;
     background-color: #00AFB9;
     color: #fff;
     width: 200px;
-    height: 30px;
+    height: 40px;
     border-radius: 3px;
-    margin: 30px 0px 60px 0px;
+    margin: 50px 0px 80px 0px;
     font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
 }

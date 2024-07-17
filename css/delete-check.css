@@ -28,6 +28,7 @@
     border-color: #eee;
     border-radius: 3px;
     font-size: 15px;
+    text-indent: 5px;
 }
 
 .delete-box .check-btn {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>가입</title>
 
     <!--부트 스트랩 css 링크-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/join.css">
     <link rel="stylesheet" href="css/setting.css">
 
+    <!--폰트어썸-->
     <script src="https://kit.fontawesome.com/79986a0df7.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -34,11 +35,11 @@
                 <img src="img/logo.png" alt="로고">
             </div>
             <nav>
-                    <div class="header-btn">
-                        <button type="button" class="btn">자유 게시판</button>
-                        <button type="button" class="btn">질문 게시판</button>
+                    <div class="header-menu">
+                        <button type="button" onclick = "location.href = '#'" class="menu-btn">자유 게시판</button>
+                        <button type="button" onclick = "location.href = '#'" class="menu-btn">질문 게시판</button>
                         <div class="dropdown drop-btn">
-                          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">코드 리뷰</button>
+                          <button type="button" class="menu-btn dropdown-toggle" data-toggle="dropdown">코드 리뷰</button>
                           <div class="dropdown-menu drop-menu">
                             <a class="dropdown-item" href="#">백준</a>
                             <a class="dropdown-item" href="#">프로그래머스</a>
@@ -46,7 +47,7 @@
                           </div>
                         </div>
                         <div class="dropdown drop-btn">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">미니 게시판</button>
+                            <button type="button" class="menu-btn dropdown-toggle" data-toggle="dropdown">미니 게시판</button>
                             <div class="dropdown-menu drop-menu">
                               <a class="dropdown-item" href="#">개설 신청</a>
                               <a class="dropdown-item" href="#">목록</a>
@@ -55,8 +56,8 @@
                     </div>
             </nav>
             <div class="right-btn">
-                <button type="button" class="btn-join">회원가입</button>
-                <button type="button" class="btn-login">로그인</button>
+                <button type="button" onclick = "location.href = '#'" class="btn-join">회원가입</button>
+                <button type="button" onclick = "location.href = '#'" class="btn-login">로그인</button>
             </div>
         </header>
     </div>
@@ -64,17 +65,22 @@
     <div class="join-page">
         <h3>회원 가입 페이지</h3>
         <div class="join-box">
-            <div class="id-input">
-                <input type="text" placeholder=" 아이디" class="join-input id-write">
-                <button type="button" class="check-btn">중복 검사</button>
+            <div>
+                <i class="fa-regular fa-user user-icon1"></i>
+                <input type="text" placeholder=" 아이디" class="join-input id-input">
+                <a href="#" class="check-btn">중복 확인</a>
+                <i class="fa-solid fa-lock user-icon2"></i>
+                <input type="text" placeholder=" 비밀번호" class="join-input">
+                <i class="fa-regular fa-user user-icon3"></i>
+                <input type="text" placeholder=" 닉네임" class="join-input">
+                <i class="fa-regular fa-envelope user-icon4"></i>
+                <input type="text" placeholder=" 이메일 - 비밀번호 찾기 등 본인 확인용" class="join-input">
+                <i class="fa-solid fa-phone user-icon5"></i>
+                <input type="text" placeholder=" 전화번호" class="join-input">
             </div>
-            <input type="text" placeholder=" 비밀번호" class="join-input">
-            <input type="text" placeholder=" 닉네임" class="join-input">
-            <input type="text" placeholder=" 이메일 주소 - 비밀번호 찾기 등 본인 확인용" class="join-input">
-            <input type="text" placeholder=" 전화번호" class="join-input">
         </div>
         <div>
-            <button type="button" class="join-btn">회원 가입</button>
+            <a href="#" class="join-btn">회원가입</a>
         </div>
     </div>
 
