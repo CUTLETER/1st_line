@@ -3,60 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>정보 수정</title>
+    <title>Document</title>
 
-    <!--부트 스트랩 js 링크-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/delete_check.css">
+    <link rel="stylesheet" href="css/delete.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/join.css">
     <link rel="stylesheet" href="css/modify.css">
-    <link rel="stylesheet" href="css/setting.css">
-
+    
     <!--폰트어썸-->
-    <script src="https://kit.fontawesome.com/79986a0df7.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/79986a0df7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="page">
-        <header class="header">
-            <div class="logo">
-                <img src="img/logo.png" alt="로고">
+    <header class="header">
+		<div class="logo">
+			<img src="img/logo.png" alt="로고">
+		</div>
+		<div class="header-menu">
+			<button type="button" onclick="location.href = '#'" class="menu-btn">자유
+				게시판</button>
+			<button type="button" onclick="location.href = '#'" class="menu-btn">질문
+				게시판</button>
+                <button type="button"  onclick="location.href = '#'" class="menu-btn">코드 리뷰</button>
+                <button type="button"  onclick="location.href = '#'" class="menu-btn">정보 공유</button>
+			<div class="dropdown drop-btn">
+				<button type="button" class="menu-btn dropdown-toggle"
+					data-toggle="dropdown">미니 게시판</button>
+				<ul class="dropdown-menu drop-menu">
+					<li><a class="dropdown-item" href="#">개설 신청</a></li>
+					<li><a class="dropdown-item" href="#">목록</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right-btn">
+			<button type="button" onclick="location.href = '#'" class="btn-join">회원가입</button>
+			<button type="button" onclick="location.href = '#'" class="btn-login">로그인</button>
+		</div>
+	</header>
+	<div class="empty"></div>
+
+
+    <div id="wrapped">
+        <div class="modify-page">
+            <h3>회원 정보 조회/수정</h3>
+            <div class="modify-box">
+                <div>
+                    <i class="fa-regular fa-user user-icon1"></i> <input type="text"
+                        class="modify-input id-input" value="he11oworld" readonly>
+                    <i class="fa-solid fa-lock user-icon2"></i> <input type="password"
+                        placeholder=" 비밀번호" class="modify-input"> <i
+                        class="fa-solid fa-lock user-icon3"></i> <input type="password"
+                        placeholder=" 비밀번호 확인" class="modify-input"> <i
+                        class="fa-regular fa-user user-icon4"></i> <input type="text"
+                        class="modify-input" value="홍길동"> <i
+                        class="fa-regular fa-envelope user-icon5"></i> <input type="email"
+                        class="modify-input" value="he11oworld@naver.com"> <i
+                        class="fa-solid fa-phone user-icon6"></i> <input type="tel"
+                        class="modify-input" value="01036361717">
+                </div>
             </div>
-            <nav>
-                    <div class="header-menu">
-                        <button type="button" onclick = "location.href = '#'" class="menu-btn">자유 게시판</button>
-                        <button type="button" onclick = "location.href = '#'" class="menu-btn">질문 게시판</button>
-                        <div class="dropdown drop-btn">
-                          <button type="button" class="menu-btn dropdown-toggle" data-toggle="dropdown">코드 리뷰</button>
-                          <div class="dropdown-menu drop-menu">
-                            <a class="dropdown-item" href="#">백준</a>
-                            <a class="dropdown-item" href="#">프로그래머스</a>
-                            <a class="dropdown-item" href="#">솔브드</a>
-                          </div>
-                        </div>
-                        <div class="dropdown drop-btn">
-                            <button type="button" class="menu-btn dropdown-toggle" data-toggle="dropdown">미니 게시판</button>
-                            <div class="dropdown-menu drop-menu">
-                              <a class="dropdown-item" href="#">개설 신청</a>
-                              <a class="dropdown-item" href="#">목록</a>
-                            </div>
-                        </div>
-                    </div>
-            </nav>
-            <div class="right-btn">
-                <button type="button" onclick = "location.href = '#'" class="btn-join">회원가입</button>
-                <button type="button" onclick = "location.href = '#'" class="btn-login">로그인</button>
+            <div>
+                <button type="button" onclick="location.href = '#'"
+                    class="modify-btn">취소</button>
+                <button type="button" onclick="location.href = '#'"
+                    class="modify-btn check-btn">저장</button>
             </div>
-        </header>
+        </div>
     </div>
 
-
-
-    <footer class="footer">
+    <footer>
         <div class="footer-box">
-            <p>개인정보처리방침 | 이용약관 | 책임의 한계와 법적고지 | 청소년 보호정책</p>
+            <div class="footer-list">
+                <a href="#">개인정보처리방침 |</a> <a href="#">이용약관 |</a> <a href="#">책임의
+                    한계와 법적고지 |</a> <a href="#">청소년 보호정책</a>
+            </div>
             <p>Copyright ©2024 Project 1st Line. All Rights Reserved.</p>
         </div>
     </footer>

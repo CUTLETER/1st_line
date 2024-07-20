@@ -1,24 +1,14 @@
 .delete-page {
-    width: 1440px;
     margin: 0 auto;
-    padding: 0 90px;
+    /* padding: 0 90px; */
+    border: 1px solid #ccc;
+    padding-left: 50px;
 }
+
 
 .delete-page h3 {
     margin-top: 40px;
     font-size: 25px;
-}
-
-.delete-page p {
-    text-align: justify;
-}
-
-.warning-box > a {
-    text-align: center;
-    color: #333;
-    text-decoration: none;
-    cursor: default;
-    font-size: 15px;
 }
 
 .delete-page p, a{
@@ -32,20 +22,10 @@
 .delete-page .light {
     color: #888;
     font-size: 14px;
-    margin-bottom: 40px;
 }
 
-.warning-box {
-    border-top: 1px solid #999;
 
-}
-
-.warning-box .bold {
-    margin-top: 40px;
-    color: #00AFB9;
-    font-size: 15px;
-}
-
+/*탈퇴 상세 안내*/
 .delete-info .bold {
     margin-bottom: 0;
     margin-top: 40px;
@@ -56,10 +36,27 @@
     color: #00AFB9;
 }
 
+
+/*하단 탈퇴 안내*/
+.warning-box > a {
+    text-align: center;
+    color: #333;
+    cursor: default;
+    font-size: 14px;
+}
+
+.warning-box .bold {
+    margin-top: 40px;
+    color: #00AFB9;
+    font-size: 15px;
+}
+
+
+
+/*확인 버튼*/
 .delete-page .delete-btn {
     text-align: left;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin: 40px 0;
 }
 
 .delete-page .delete-btn .check-btn {
@@ -68,6 +65,7 @@
     background-color: #00AFB9;
     width: 60px;
     height: 30px;
-    font-size: 15px;
+    font-size: 14px;
 }
+
 

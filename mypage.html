@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/join.css">
     <link rel="stylesheet" href="css/modify.css">
+    <link rel="stylesheet" href="css/mypage.css">
     
     <!--폰트어썸-->
 <script src="https://kit.fontawesome.com/79986a0df7.js" crossorigin="anonymous"></script>
@@ -42,13 +43,26 @@
 				</ul>
 			</div>
 		</div>
-		<div class="right-btn">
-			<button type="button" onclick="location.href = '#'" class="btn-join">회원가입</button>
-			<button type="button" onclick="location.href = '#'" class="btn-login">로그인</button>
+		<div class="user-btn">
+            <div class="dropdown drop-btn">
+				<button type="button" class="dropdown-toggle btn-my"
+					data-toggle="dropdown">내 정보</button>
+				<ul class="dropdown-menu drop-menu2">
+					<li><a class="dropdown-item" href="#">정보 수정</a></li>
+					<li><a class="dropdown-item" href="#">활동 내역</a></li>
+					<li><a class="dropdown-item" href="#">회원 탈퇴</a></li>
+				</ul>
+			</div>			
+            <button type="button" onclick="location.href = '#'" class="btn-logout">로그아웃</button>
 		</div>
 	</header>
 	<div class="empty"></div>
 
+    <div id="wrapped">
+        <div class="my page">
+            
+        </div>
+    </div>
     
     <footer>
         <div class="footer-box">

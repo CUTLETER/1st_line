@@ -1,63 +1,80 @@
 .join-page {
     width: 500px;
-    height: 500px;
+    height: 700px;
     margin: 0 auto;
-    padding-left: 50px;
-    border: 0.5px solid #eee;
+    border: 0.5px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .join-page h3 {
     font-size: 25px;
     font-family: 'NanumBarunGothic', sans-serif;
     color: #333;
-    margin: 40px 0px;
+    margin-bottom: 50px;
 }
 
-.join-page .join-box > div {
+.join-box > div {
     position: relative;
 }
 
-.join-page .join-box > div .id-input {
+.join-box > div .id-input {
     width: 230px;
 }
 
-.join-page .join-box > div .user-icon1,.user-icon2,.user-icon3,.user-icon4,.user-icon5 {
+
+.join-box > div .id-input:hover {
+    border: 0.25px solid #00AFB9;
+    outline: none;
+}
+
+/*아이콘*/
+.join-box .user-icon1,
+.join-box .user-icon2,
+.join-box .user-icon3,
+.join-box .user-icon4,
+.join-box .user-icon5,
+.join-box .user-icon6 {
     position: absolute;
     font-size: 15px;
     color: #f07167;
 }
 
-.join-page .join-box > div .user-icon1 {
+.join-box .user-icon1 {
     top: 7px;
     left: 7px;
 }
 
-.join-page .join-box > div .user-icon2 {
-    top: 66px;
+.join-box .user-icon2 {
+    top: 67px;
     left: 7px;
 }
 
-.join-page .join-box > div .user-icon3 {
-    top: 128px;
+.join-box .user-icon3 {
+    top: 127px;
     left: 7px;
 }
 
-.join-page .join-box > div .user-icon4 {
+.join-box .user-icon4 {
     top: 187px;
     left: 7px;
 }
 
-.join-page .join-box > div .user-icon5 {
+.join-box .user-icon5 {
     top: 247px;
     left: 7px;
 }
 
-.join-page .join-box > div {
-    position: relative;
+.join-box .user-icon6 {
+    top: 307px;
+    left: 7px;
 }
 
 
-.join-page .join-box .check-btn {
+/*중복 확인 버튼*/
+.join-box .check-btn {
     position: absolute;
     width: 60px;
     height: 30px;
@@ -69,13 +86,12 @@
     color: #fff;
     font-family: 'NanumBarunGothic', sans-serif;    
     border-radius: 2px;
-    text-decoration: none;
-    font-size: 11px;
-    text-align: center;
-    line-height: 30px;
+    font-size: 12px;
 }
 
-.join-page .join-box .join-input {
+
+/*입력창*/
+.join-box .join-input {
     display: block;
     border: 0.25px solid #ccc;
     border-radius: 3px;
@@ -86,22 +102,21 @@
     text-indent: 25px;
 }
 
-.join-page .join-box .join-input:focus, .join-input:hover {
+.join-box .join-input:focus, .join-input:hover {
     border: 0.25px solid #00AFB9;
     outline: none;
 }
 
-.join-page div > .join-btn {
-    display: block;
+
+/*회원 가입 버튼*/
+.join-page .join-btn {
     border: 0;
     background-color: #00AFB9;
     color: #fff;
-    width: 200px;
+    width: 300px;
     height: 40px;
     border-radius: 3px;
-    margin: 50px 0px 80px 0px;
-    font-size: 12px;
-    text-align: center;
-    line-height: 40px;
-    text-decoration: none;
+    margin: 50px 0;
+    font-size: 15px;
+    font-family: 'NanumBarunGothic', sans-serif;    
 }
