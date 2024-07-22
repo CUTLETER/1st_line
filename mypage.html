@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/header.css">
@@ -34,23 +34,23 @@
 				게시판</button>
                 <button type="button"  onclick="location.href = '#'" class="menu-btn">코드 리뷰</button>
                 <button type="button"  onclick="location.href = '#'" class="menu-btn">정보 공유</button>
-			<div class="dropdown drop-btn">
-				<button type="button" class="menu-btn dropdown-toggle"
-					data-toggle="dropdown">미니 게시판</button>
-				<ul class="dropdown-menu drop-menu">
-					<li><a class="dropdown-item" href="#">개설 신청</a></li>
-					<li><a class="dropdown-item" href="#">목록</a></li>
-				</ul>
-			</div>
+                <div class="dropdown drop-btn">
+                    <button type="button" class="menu-btn dropdown-toggle"
+                        data-toggle="dropdown">미니 게시판</button>
+                    <ul class="dropdown-menu drop-menu">
+                        <li><a class="dropdown-item drop-list" href="#">개설 신청</a></li>
+                        <li><a class="dropdown-item drop-list" href="#">목록</a></li>
+                    </ul>
+                </div>
 		</div>
 		<div class="user-btn">
             <div class="dropdown drop-btn">
 				<button type="button" class="dropdown-toggle btn-my"
 					data-toggle="dropdown">내 정보</button>
 				<ul class="dropdown-menu drop-menu2">
-					<li><a class="dropdown-item" href="#">정보 수정</a></li>
-					<li><a class="dropdown-item" href="#">활동 내역</a></li>
-					<li><a class="dropdown-item" href="#">회원 탈퇴</a></li>
+					<li><a class="dropdown-item drop-list2" href="#">정보 수정</a></li>
+					<!-- <li><a class="dropdown-item drop-list2" href="#">활동 내역</a></li> -->
+					<li><a class="dropdown-item drop-list2" href="#">회원 탈퇴</a></li>
 				</ul>
 			</div>			
             <button type="button" onclick="location.href = '#'" class="btn-logout">로그아웃</button>
@@ -58,11 +58,11 @@
 	</header>
 	<div class="empty"></div>
 
-    <div id="wrapped">
+    <!-- <div id="wrapped">
         <div class="my page">
             
         </div>
-    </div>
+    </div> -->
     
     <footer>
         <div class="footer-box">

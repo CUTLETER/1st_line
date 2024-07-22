@@ -20,7 +20,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 1440px;
+    width: 1600px;
     height: 1px;
     background-color: #ccc;
 }
@@ -89,11 +89,11 @@
 
 /* 아래부터 드롭다운*/
 
-.dropdown-toggle {
-        height: 30px;
+.menu-btn {
+    height: 30px;
 }
 
-.dropdown-toggle::after {
+.menu-btn::after {
     border: 0px;
 }
 
@@ -102,7 +102,7 @@
     border-radius: 0;
     box-shadow: none;
     margin-top: 35px;
-    margin-left: -35px;
+    min-width: 100px;
 }
 
 
@@ -111,7 +111,7 @@
     font-size: 15px;
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
+.drop-list:hover, .drop-list:focus {
     text-decoration: underline;
     background-color: #FFFFFF;
 }
