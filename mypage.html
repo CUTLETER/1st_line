@@ -58,11 +58,149 @@
 	</header>
 	<div class="empty"></div>
 
-    <div id="wrapped">
-        <div class="my page">
-            
-        </div>
+
+  <div id="wrapped">
+    <section class="toggle-list">
+      <ul class="toggle">
+          <li data-id="#toggle1">내가 쓴 글 |</li>
+          <li data-id="#toggle2">내가 쓴 댓글</li>
+      </ul>
+
+      <div class="toggle-wrap">
+          <div class="toggle-menu active" id="toggle1">
+            <table id="board-list">
+              <thead>
+                <tr>
+                    <th scope="col">선택</th>
+                    <th scope="col">글 번호</th>
+                    <th scope="col">글 제목</th>
+                    <th scope="col">작성일</th>
+                    <th scope="col">조회수</th>
+                    <th scope="col">좋아요</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="td_num">253</td>
+                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
+                  <td class="td_datetime">01-19</td>
+                  <td class="td_hits">99</td>
+                  <td class="td_likes">3</td>
+                </tr>
+                <tr class="">
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="td_num">253</td>
+                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
+                  <td class="td_datetime">01-19</td>
+                  <td class="td_hits">99</td>
+                  <td class="td_likes">3</td>
+                </tr>
+                <tr class="">
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="td_num">253</td>
+                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
+                  <td class="td_datetime">01-19</td>
+                  <td class="td_hits">99</td>
+                  <td class="td_likes">3</td>
+                </tr>
+                <tr class="">
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="td_num">253</td>
+                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
+                  <td class="td_datetime">01-19</td>
+                  <td class="td_hits">99</td>
+                  <td class="td_likes">3</td>
+                </tr>
+              </tbody>
+              </table>
+          </div>
+
+
+
+          <div class="toggle-menu" id="toggle2">
+            <table id="board-list">
+              <thead>
+                <tr>
+                    <th scope="col">선택</th>
+                    <th scope="col">댓글 번호</th>
+                    <th scope="col">댓글 내용</th>
+                    <th scope="col">작성일</th>
+                    <th scope="col">좋아요</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="td_num">253</td>
+                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
+                  <td class="td_datetime">01-19</td>
+                  <td class="td_likes">3</td>
+                </tr>
+                <tr class="">
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="td_num">253</td>
+                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
+                  <td class="td_datetime">01-19</td>
+                  <td class="td_likes">3</td>
+                </tr>
+                <tr class="">
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="td_num">253</td>
+                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
+                  <td class="td_datetime">01-19</td>
+                  <td class="td_likes">3</td>
+                </tr>
+                <tr class="">
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="td_num">253</td>
+                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
+                  <td class="td_datetime">01-19</td>
+                  <td class="td_likes">3</td>
+                </tr>
+              </tbody>
+              </table>
+          </div>
+
+
+
+      </div>
+   </section>
+
+
+    <div class="page-list">
+    <ul class="pagination">
+      <li><a href="#">이전</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">다음</a></li>
+    </ul>
     </div>
+</div>
+
+
+        <script>
+            // ul에 이벤트 위임을 이용해서 클릭 이벤트 걸기
+            // 클릭 되는 타겟의 data-id를 얻기
+            // toggle-wrap 클래스 아래에 있는 active 속성 삭제하기
+            // data-id의 값에 알맞는 태그에 active 속성 추가하기
+    
+            var toggle = document.querySelector(".toggle");
+            toggle.addEventListener('click', function(e) {
+    
+                if (e.target.tagName != ("LI")) return;
+    
+                var active = document.querySelector(".toggle-menu.active");
+                active.classList.remove("active");
+    
+                var value = event.target.dataset.id;
+                var tag = document.querySelector(value); // 클릭한 대상에 연결되는 태그
+                tag.classList.add("active");
+            })
+        </script>
     
     <footer>
         <div class="footer-box">

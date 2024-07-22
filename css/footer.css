@@ -3,6 +3,7 @@
     padding: 75px 0px;
     margin: 0 auto;
     position: relative;
+    height: 1px;
 }
 
 .footer-box::before {
@@ -10,7 +11,7 @@
     content: "";
     top: 50px;
     left: 50%;
-    width: 1600px;
+    width: 1920px;
     height: 1px;
     background-color: #ddd;
     transform: translateX(-50%);

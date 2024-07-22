@@ -50,4 +50,93 @@
 
 /*--------------------------------------*/
 
+/* 게시글 목록 */
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+thead th {
+    background-color: #f9f7f3;
+    font-weight: bold;
+}
+
+
+
+td.td_num {
+    width: 10%;
+}
+
+td.td_subject {
+    width: 30%;
+}
+
+td.td_datetime {
+    width: 15%;
+}
+
+td.td_hits {
+    width: 10%;
+}
+
+td.td_likes {
+    width: 25%;
+}
+
+
+th, td {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+
+ #board-list tbody .td_subject a {
+    color: black;
+    font-weight: normal;
+} 
+
+.bo_notice .td_subject a {
+    font-weight: 900;
+}
+
+
+
+
+tr:not(.bo_notice) .td_subject a {
+    font-weight: normal; 
+}
+
+
+
+
+/*토글 탭*/
+.toggle-list .toggle > li {    
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+.active {
+    display: block; animation: fadeIn 0.5s ease-in-out;
+}
+
+
+/*페이지 번호*/
+.page-list {
+    text-align: center;
+}
+
+.page-number .pagination > li > a {
+    border: 0;
+}
