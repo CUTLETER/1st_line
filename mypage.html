@@ -47,7 +47,7 @@
             <div class="dropdown drop-btn">
 				<button type="button" class="dropdown-toggle btn-my"
 					data-toggle="dropdown">내 정보</button>
-				<ul class="dropdown-menu drop-menu2">
+				<ul class="dropdown-menu drop-menu2" style="min-width: 65px;">
 					<li><a class="dropdown-item drop-list2" href="#">정보 수정</a></li>
 					<li><a class="dropdown-item drop-list2" href="#">활동 내역</a></li>
 					<li><a class="dropdown-item drop-list2" href="#">회원 탈퇴</a></li>
@@ -62,125 +62,224 @@
   <div id="wrapped">
     <section class="toggle-list">
       <ul class="toggle">
-          <li data-id="#toggle1">내가 쓴 글 |</li>
-          <li data-id="#toggle2">내가 쓴 댓글</li>
+          <li data-id="#toggle1" tabindex="0">내가 쓴 글</li>
+          <li data-id="#toggle2" tabindex="0">내가 쓴 댓글</li>
       </ul>
 
       <div class="toggle-wrap">
           <div class="toggle-menu active" id="toggle1">
-            <table id="board-list">
+            <table class="board">
               <thead>
                 <tr>
-                    <th scope="col">선택</th>
-                    <th scope="col">글 번호</th>
-                    <th scope="col">글 제목</th>
-                    <th scope="col">작성일</th>
-                    <th scope="col">조회수</th>
-                    <th scope="col">좋아요</th>
+                  <th>선택</th>
+                  <th>글 번호</th>
+                  <th>글 제목</th>
+                  <th>작성일</th>
+                  <th>조회수</th>
+                  <th>좋아요</th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="">
+                <tr>
                   <td class="td_check"><input type="checkbox"></td>
-                  <td class="td_num">253</td>
-                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
-                  <td class="td_datetime">01-19</td>
-                  <td class="td_hits">99</td>
-                  <td class="td_likes">3</td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="hits">99</td>
+                  <td class="likes">3</td>
                 </tr>
-                <tr class="">
+                <tr>
                   <td class="td_check"><input type="checkbox"></td>
-                  <td class="td_num">253</td>
-                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
-                  <td class="td_datetime">01-19</td>
-                  <td class="td_hits">99</td>
-                  <td class="td_likes">3</td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="hits">99</td>
+                  <td class="likes">3</td>
                 </tr>
-                <tr class="">
+                <tr>
                   <td class="td_check"><input type="checkbox"></td>
-                  <td class="td_num">253</td>
-                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
-                  <td class="td_datetime">01-19</td>
-                  <td class="td_hits">99</td>
-                  <td class="td_likes">3</td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="hits">99</td>
+                  <td class="likes">3</td>
                 </tr>
-                <tr class="">
+                <tr>
                   <td class="td_check"><input type="checkbox"></td>
-                  <td class="td_num">253</td>
-                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
-                  <td class="td_datetime">01-19</td>
-                  <td class="td_hits">99</td>
-                  <td class="td_likes">3</td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="hits">99</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="hits">99</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="hits">99</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="hits">99</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="hits">99</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="hits">99</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="hits">99</td>
+                  <td class="likes">3</td>
                 </tr>
               </tbody>
-              </table>
+              <button type="button" id="select-all">전체 선택</button>
+              <button type="button" id="delete-btn">삭제</button>
+            </table>
+            <div class="pagination-wrap">
+              <ul class="pagination page-number">
+                <li><a href="#">이전</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">다음</a></li>
+              </ul>
+            </div>
           </div>
 
 
 
           <div class="toggle-menu" id="toggle2">
-            <table id="board-list">
+            <table class="comment-page">
               <thead>
                 <tr>
-                    <th scope="col">선택</th>
-                    <th scope="col">댓글 번호</th>
-                    <th scope="col">댓글 내용</th>
-                    <th scope="col">작성일</th>
-                    <th scope="col">좋아요</th>
+                  <th>선택</th>
+                  <th>댓글 번호</th>
+                  <th>댓글 내용</th>
+                  <th>작성일</th>
+                  <th>좋아요</th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="">
+                <tr>
                   <td class="td_check"><input type="checkbox"></td>
-                  <td class="td_num">253</td>
-                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
-                  <td class="td_datetime">01-19</td>
-                  <td class="td_likes">3</td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="likes">3</td>
                 </tr>
-                <tr class="">
+                <tr>
                   <td class="td_check"><input type="checkbox"></td>
-                  <td class="td_num">253</td>
-                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
-                  <td class="td_datetime">01-19</td>
-                  <td class="td_likes">3</td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="likes">3</td>
                 </tr>
-                <tr class="">
+                <tr>
                   <td class="td_check"><input type="checkbox"></td>
-                  <td class="td_num">253</td>
-                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
-                  <td class="td_datetime">01-19</td>
-                  <td class="td_likes">3</td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="likes">3</td>
                 </tr>
-                <tr class="">
+                <tr>
                   <td class="td_check"><input type="checkbox"></td>
-                  <td class="td_num">253</td>
-                  <td class="td_subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a> </td>
-                  <td class="td_datetime">01-19</td>
-                  <td class="td_likes">3</td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="likes">3</td>
+                </tr>
+                <tr>
+                  <td class="td_check"><input type="checkbox"></td>
+                  <td class="num">253</td>
+                  <td class="subject"><a href="#">요즘, 제가 즐겨듣는 노래입니다.</a></td>
+                  <td class="date">01-19</td>
+                  <td class="likes">3</td>
                 </tr>
               </tbody>
-              </table>
+              <button type="button" id="select-all">전체 선택</button>
+              <button type="button" id="delete-btn">삭제</button>
+            </table>
+            <div class="pagination-wrap">
+              <ul class="pagination page-number">
+                <li><a href="#">이전</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">다음</a></li>
+              </ul>
+            </div>
           </div>
-
-
-
       </div>
    </section>
-
-
-    <div class="page-list">
-    <ul class="pagination">
-      <li><a href="#">이전</a></li>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li><a href="#">다음</a></li>
-    </ul>
-    </div>
 </div>
-
 
         <script>
             // ul에 이벤트 위임을 이용해서 클릭 이벤트 걸기
