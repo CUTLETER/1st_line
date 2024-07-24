@@ -1,6 +1,6 @@
 .modify-page {
     width: 500px;
-    height: 600px;
+    height: 500px;
     margin: 0 auto;
     border: 0.5px solid #ccc;
     display: flex;
@@ -13,7 +13,7 @@
     font-size: 25px;
     font-family: 'NanumBarunGothic', sans-serif;
     color: #333;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .modify-box > div {
@@ -107,7 +107,7 @@
     width: 80px;
     height: 30px;
     border-radius: 3px;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     font-size: 13px;
     font-family: 'NanumBarunGothic', sans-serif;  
     line-height: 30px;
